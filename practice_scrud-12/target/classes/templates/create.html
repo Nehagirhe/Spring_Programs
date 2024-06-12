@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/insert}" th:object="${EmptyUser}">
+NAME : <input type="text" name="name" th:field="*{name}">
+PASS : <input type="text" name="pass" th:field="*{pass}">
+EMAIl : <input type="text" name="email" th:field="*{email}">
+<input type="submit" value="go">
+</form>
+</body>
+</html>
