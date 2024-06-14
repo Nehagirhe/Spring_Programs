@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/insert}" th:object="${user}">
+<input type ="hidden" name="name" th:field="*{id}"><br>
+NAME : <input type="text" name="name" th:field="*{name}"><br>
+PASS : <input type="text" name="pass" th:field="*{pass}"><br>
+EMAIL : <input type="text" name="email" th:field="*{email}"><br>
+<input type="submit" value="edit">
+</form>
+</body>
+</html>

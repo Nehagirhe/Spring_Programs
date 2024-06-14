@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table th:each="ul:${userlist}">
+<tr>
+<thead>
+<td>ID</td>
+<td>NAME</td>
+<td>PASS</td>
+<td>Email</td>
+</thead>
+</tr>
+<tr>
+<td th:text="${ul.id}"></td>
+<td th:text="${ul.name}"></td>
+<td th:text="${ul.pass}"></td>
+<td th:text="${ul.email}"></td>
+<td><a th:href="@{/delete/{id}(id=${ul.id})}">DELETE</a></td>
+<td><a th:href="@{/editshow/{id}(id=${ul.id})}">UPDATE</a></td>
+<tr>
+</table>
+</body>
+</html>

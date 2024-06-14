@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>CREATE</h1>
+<form th:action="@{/insert}" th:object="${EmptyUser}">
+<input type="text" name="name" th:field="${EmptyUser.name}"><br>
+<input type="text" name="pass" th:field="${EmptyUser.pass}"><br>
+<input type="text" name="email" th:field="${EmptyUser.email}"><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
+
