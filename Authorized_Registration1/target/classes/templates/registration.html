@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" th:action="@{/save}" th:object="${obj}">
+UserName : <input type="text" th:field="*{uname}"><br>
+PassWord : <input type="text" th:field="*{upass}"><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
