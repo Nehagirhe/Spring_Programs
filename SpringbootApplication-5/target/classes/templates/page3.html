@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Name : <p th:text="${obj.name}">Name</p>
+Age : <p th:text="${obj.age}">Age</p>
+Salary : <p th:text="${obj.salary}">Salary</p>
+
+
+Object U : <p th:text ="${obj}"></p>
+
+<div th:text="${obj}">
+Name : <p th:text="*{name}">User Name</p>
+Age  : <p th:text="*{age}">User Age</p>
+Salary : <p th:text ="*{salary}">User Salary</p>
+</div>
+</body>
+</html>
