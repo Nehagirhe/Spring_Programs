@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" th:action= "@{/add}" th:object="${obj}">
+First Name : <input type="text" th:field = "*{fname}"><br>
+Last Name : <input type="text" th:field = "*{lname}"><br>
+Email : <input type="text" th:field ="*{email}"><br>
+Pass : <input type="text" th:field ="*{pass}"><br>
+<input type="Submit" value="Register">
+</form>
+
+</body>
+</html>
